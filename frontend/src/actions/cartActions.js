@@ -1,4 +1,4 @@
-import {axiosInstance} from '../../config';
+import {axiosInstance} from '../config';
 import {
   CART_ADD_ITEM,
   CART_REMOVE_ITEM,

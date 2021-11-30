@@ -1,4 +1,4 @@
-import {axiosInstance} from '../../config';
+import {axiosInstance} from '../config';
 import {
   PRODUCT_CREATE_FAIL,
   PRODUCT_CREATE_REQUEST,

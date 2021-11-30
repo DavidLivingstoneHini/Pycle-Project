@@ -1,4 +1,4 @@
-import {axiosInstance} from '../../config';
+import {axiosInstance} from '../config';
 import { CART_EMPTY } from '../constants/cartConstants';
 import {
   ORDER_CREATE_FAIL,
