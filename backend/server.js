@@ -15,6 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+mongodb+srv://Swae:<Innovator@12>@cluster0.m9urv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona');
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
