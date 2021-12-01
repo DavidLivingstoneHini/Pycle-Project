@@ -15,7 +15,35 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+async function main(){
+  /**
+   * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
+   * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
+   */
+  const uri = "mongodb+srv://Swae:<Innovator@12>@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority";
+
+  const client = new MongoClient(uri);
+
+  try {
+      // Connect to the MongoDB cluster
+      await client.connect();
+
+      // Make the appropriate DB calls
+      await  listDatabases(client);
+
+  } catch (e) {
+      console.error(e);
+  } finally {
+      await client.close();
+  }
+}
+
+main().catch(console.error);
+
+const mongoose = require("mongoose");
+
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona');
+
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
