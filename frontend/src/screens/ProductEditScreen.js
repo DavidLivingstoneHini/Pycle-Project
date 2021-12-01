@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {axiosInstance} from '../config';
+import {axios} from 'axios';
 import { detailsProduct, updateProduct } from '../actions/productActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
@@ -71,7 +71,7 @@ export default function ProductEditScreen(props) {
     bodyFormData.append('image', file);
     setLoadingUpload(true);
     try {
-      const { data } = await axiosInstance.post('/api/uploads', bodyFormData, {
+      const { data } = await axios.post('/api/uploads', bodyFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${userInfo.token}`,

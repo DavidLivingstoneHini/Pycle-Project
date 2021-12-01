@@ -15,8 +15,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongodb+srv://Swae:<Innovator@12>@cluster0.a8vll.mongodb.net/amazona?retryWrites=true&w=majority
-
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona');
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
@@ -116,10 +114,10 @@ io.on('connection', (socket) => {
   });
 });
 
-//httpServer.listen(port, () => {
-//  console.log(`Serve at http://localhost:${port}`);
-//});
+httpServer.listen(port, () => {
+  console.log(`Serve at http://localhost:${port}`);
+});
 
-app.listen(process.env.PORT ||5000, () => {
-  console.log("Backend is live");
- });
+// app.listen(port, () => {
+//   console.log(`Serve at http://localhost:${port}`);
+// });

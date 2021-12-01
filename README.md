@@ -1,7 +1,9 @@
 # Amazona ECommerce Website
+
 ![amazona](/template/images/amazona.jpg)
 
 # React & Node Tutorial - Full ECommerce in 9 Hours [2021]
+
 Welcome to my React and Node tutorial to build a fully-functional e-commerce website exactly like amazon. Open your code editor and follow me for the next hours to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
 ## Demo Website
@@ -9,11 +11,10 @@ Welcome to my React and Node tutorial to build a fully-functional e-commerce web
 - 👉 Heroku : [https://react-amazona.herokuapp.com](https://react-amazona.herokuapp.com)
 - 👉 Heroku Mirror: [https://react-amazona-mirror.herokuapp.com](https://react-amazona-mirror.herokuapp.com)
 
-
 ## You Will Learn
 
 - HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
-- React: Components, Props, Events, Hooks, Router, Axios
+- React: Components, Props, Events, Hooks, Router, {axios}
 - Redux: Store, Reducers, Actions
 - Node & Express: Web API, Body Parser, File Upload, JWT
 - MongoDB: Mongoose, Aggregation
@@ -35,7 +36,7 @@ $ cd amazona
 - Local MongoDB
   - Install it from [here](https://www.mongodb.com/try/download/community)
   - Create .env file in root folder
-  - Set MONGODB_URL=mongodb://localhost/amazona  
+  - Set MONGODB_URL=mongodb://localhost/amazona
 - Atlas Cloud MongoDB
   - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
   - Create .env file in root folder
@@ -142,7 +143,7 @@ $ npm start
     2. define products, loading and error.
     3. create useEffect
     4. define async fetchData and call it
-    5. install axios
+    5. install {axios}
     6. get data from /api/products
     7. show them in the list
     8. create Loading Component
@@ -296,28 +297,26 @@ $ npm start
     2. define state
     3. create fields
     4. load product details
-    5.  add to routes
+    5. add to routes
 39. Update Product
     1. define update api
     2. define product update constant, action and reducer
     3. use action in Product Edit Screen
 40. Upload Product Image
     1. npm install multer
-    7. define upload router
-    8. create uploads folder 
-    9. Handle frontend
+    2. define upload router
+    3. create uploads folder
+    4. Handle frontend
 41. Delete Product
-    1.  create delete api in backend
-    2.  create delete constants, action and reducer
-    3.  use it in product list screen
+    1. create delete api in backend
+    2. create delete constants, action and reducer
+    3. use it in product list screen
 42. List Orders
     1. create order list api
     2. create Order List Screen
     3. Add reducer to store
     4. show products on the screen
-43. Delete Order
-    2. create delete order action and reducer
-    3. add order delete action to order list
+43. Delete Order 2. create delete order action and reducer 3. add order delete action to order list
 44. Deliver Order
     1. create constant, actions and reducers for deliver order
     2. add order deliver action to order details screen
@@ -328,10 +327,10 @@ $ npm start
     4. heroku login
     5. heroku apps:create <yourname>amazona
     6. Edit package.json for build script
-    10. Create Procfile
-    12. Create mongodb atlas database
-    19. Set database connection in heroku env variables
-    20. Commit and push
+    7. Create Procfile
+    8. Create mongodb atlas database
+    9. Set database connection in heroku env variables
+    10. Commit and push
 46. List Users
     1. build api for list users
     2. Create UserList Screen
@@ -358,54 +357,54 @@ $ npm start
     2. implement actions and reducers for top sellers
     3. use react carousel with data in Home Screen
 52. Force Order Items From One Seller
-    1.  update addToCart action to buy from one seller at an order
+    1. update addToCart action to buy from one seller at an order
 53. Create Search Box and Search Screen
     1. create search bar in Header.js
     2. add style
     3. handle submit form
     4. edit parse url to get query string
     5. update product list api for search by name
- 54. Add Advanced Search Filter
-    1. filter by category
-    2. filter by price range
-    3. filter by average rating
- 55. Complete Advanced Search
-    1. filter by price
-    2. filter by rating
-    3. sort by price, rating, ...
- 56. Rate and Review Products
-    1. rate products
-    2. create actions and reducers
- 57. Choose Address On Google Map
-    1. create google map credentials
-    2. update .env file with Google Api Key
-    3. create api to send google api to frontend
-    4. create map screen
-    5. fetch google api
-    6. getUserLocation
-    7. install @react-google-maps/api
-    8. use it in shipping screen
-    9. apply map to the checkout screen
- 58. BugFix: Running Locally Without Issue
-     1.  add seller info to data.js
-     2.  seed product data with admin info as seller
-     3.  fix isSeller and isAdmin on update user
-     4.  remove auth from user details
- 59. Implement Pagination
-     1.  add pagination to product router in backend
-     2.  apply page number to actions and reducers in frontend
-     3.  show page numbers in search screen
-  60. Email order receipt by mailgun
-     1.  create mailgun account
-     2.  add and verify your domain to mailgun
-     3.  install mailgun-js
-     4.  set api key in env file
-     5.  change pay order in orderRouter
-     6.  send email the 
- 61. Create Dashboard Screen
-     1.  Create chart data in backend
-     2.  Build Chart screen
- 62. Implement Live Chat With Customers
-     1.  use socket io to create backend
-     2.  create chat box component
-     3.  create support screen
+54. Add Advanced Search Filter
+55. filter by category
+56. filter by price range
+57. filter by average rating
+58. Complete Advanced Search
+59. filter by price
+60. filter by rating
+61. sort by price, rating, ...
+62. Rate and Review Products
+63. rate products
+64. create actions and reducers
+65. Choose Address On Google Map
+66. create google map credentials
+67. update .env file with Google Api Key
+68. create api to send google api to frontend
+69. create map screen
+70. fetch google api
+71. getUserLocation
+72. install @react-google-maps/api
+73. use it in shipping screen
+74. apply map to the checkout screen
+75. BugFix: Running Locally Without Issue
+    1. add seller info to data.js
+    2. seed product data with admin info as seller
+    3. fix isSeller and isAdmin on update user
+    4. remove auth from user details
+76. Implement Pagination
+    1. add pagination to product router in backend
+    2. apply page number to actions and reducers in frontend
+    3. show page numbers in search screen
+77. Email order receipt by mailgun
+78. create mailgun account
+79. add and verify your domain to mailgun
+80. install mailgun-js
+81. set api key in env file
+82. change pay order in orderRouter
+83. send email the
+84. Create Dashboard Screen
+    1. Create chart data in backend
+    2. Build Chart screen
+85. Implement Live Chat With Customers
+    1. use socket io to create backend
+    2. create chat box component
+    3. create support screen
