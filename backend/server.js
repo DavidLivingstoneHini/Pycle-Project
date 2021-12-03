@@ -15,29 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-async function run() {
-  const { MongoClient } = require("mongodb");
-
-  const uri =
-    "mongodb+srv://Swae:<Innovator%4012>@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority";
-
-  const client = new MongoClient(uri);
-
-  try {
-    // Connect to the MongoDB cluster
-    await client.connect();
-
-    // Make the appropriate DB calls
-    await listDatabases(client);
-  } catch (e) {
-    console.error(e);
-  } finally {
-    await client.close();
-  }
-}
-run().catch(console.error);
-
-mongoose.connect(process.env.uri || "mongodb://localhost/amazona");
+mongoose.connect(
+  "mongodb+srv://Swae:Innovator%4012@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority"
+);
 
 app.use("/api/uploads", uploadRouter);
 app.use("/api/users", userRouter);
