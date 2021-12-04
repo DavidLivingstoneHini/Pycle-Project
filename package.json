@@ -2,7 +2,10 @@
   "name": "amazona",
   "type": "module",
   "version": "1.0.0",
-  "description": "Ecommerce website like amazon",
+  "description": "Car Rental web app",
+  "engines": {
+    "node": "14.17.6"
+  },
   "main": "index.js",
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
