@@ -15,9 +15,17 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(
-  "mongodb+srv://Swae:Innovator%4012@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority"
-);
+const MONGODB_URI =
+  "mongodb+srv://Swae:Innovator%4012@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority";
+
+mongoose.connect(MONGODB_URI || "mongodb://localhost/amazona", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+mongoose.connection.on("connected", () => {
+  console.log("Mongoose is connected");
+});
 
 app.use("/api/uploads", uploadRouter);
 app.use("/api/users", userRouter);
