@@ -18,6 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 const MONGODB_URI =
   "mongodb+srv://Swae:Innovator%4012@cluster0.m9urv.mongodb.net/amazona?retryWrites=true&w=majority";
 
+MONGODB_URI == process.env.MONGODB_URI;
+
 mongoose.connect(MONGODB_URI || "mongodb://localhost/amazona", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
