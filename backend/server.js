@@ -21,6 +21,7 @@ const MONGODB_URI =
 mongoose.connect(MONGODB_URI || "mongodb://localhost/amazona", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
 mongoose.connection.on("connected", () => {
