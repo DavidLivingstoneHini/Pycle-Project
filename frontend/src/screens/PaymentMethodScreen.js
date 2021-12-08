@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { savePaymentMethod } from '../actions/cartActions';
-import CheckoutSteps from '../components/CheckoutSteps';
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { savePaymentMethod } from "../actions/cartActions";
+import CheckoutSteps from "../components/CheckoutSteps";
 
 export default function PaymentMethodScreen(props) {
   const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
   if (!shippingAddress.address) {
-    props.history.push('/shipping');
+    props.history.push("/shipping");
   }
-  const [paymentMethod, setPaymentMethod] = useState('PayPal');
+  const [paymentMethod, setPaymentMethod] = useState("PayPal");
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(savePaymentMethod(paymentMethod));
-    props.history.push('/placeorder');
+    props.history.push("/placeorder");
   };
   return (
     <div>
@@ -34,7 +34,7 @@ export default function PaymentMethodScreen(props) {
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="Credit/Visa Card">Credit/Visa Card</label>
+            <label htmlFor="Credit/Visa Card">Credit or Debit Card</label>
           </div>
         </div>
         <div>
