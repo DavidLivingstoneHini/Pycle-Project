@@ -2,6 +2,8 @@
 
 This is a car rental system built with the MERN stack.
 
+## [LIVE DEMO](https://davidlivingstone-grealishpage-c31364.netlify.app/)
+
 ## Run Locally
 
 ### 1. Clone repo
