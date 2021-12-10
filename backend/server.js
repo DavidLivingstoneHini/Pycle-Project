@@ -15,11 +15,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// const MONGODB_URI =
- // "your db-connection";
-
-// MONGODB_URI == process.env.MONGODB_URI;
-
 mongoose.connect(MONGODB_URI || "mongodb://localhost/amazona", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
