@@ -38,8 +38,3 @@ $ cd frontend
 $ npm install
 $ npm start
 ```
-
-### 6. Admin Login
-
-- Run http://localhost:3000/signin
-- Enter admin email and password and click signin
