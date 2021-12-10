@@ -2,7 +2,7 @@
 
 This is a car rental system built with the MERN stack.
 
-## [LIVE DEMO](https://davidlivingstone-grealishpage-c31364.netlify.app/)
+## [LIVE DEMO](https://pycle.herokuapp.com/)
 
 ## Run Locally
 
@@ -10,7 +10,7 @@ This is a car rental system built with the MERN stack.
 
 ```
 $ git clone git@github.com:DavidLivingstoneHini/Pycle-Project.git
-$ cd amazona
+$ cd Pycle-Project
 ```
 
 ### 2. Setup MongoDB
