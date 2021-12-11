@@ -14,27 +14,14 @@ $ git clone git@github.com:DavidLivingstoneHini/Pycle-Project.git
 $ cd Pycle-Project
 ```
 
-### 2. Setup MongoDB
-
-- Local MongoDB
-  - Install MONGODB Compass
-  - Create .env file in root folder
-  - Set MONGODB_URL to mongodb/localhost/"your local db-name/url"
-  
-- Atlas Cloud MongoDB
-  - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
-  - Create .env file in root folder
-
-  - Set MONGODB_URL=mongodb+srv://your-db-connection
-
-### 3. Running the Backend
+### 2. Running the Backend
 
 ```
 $ npm install
 $ npm start
 ```
 
-### 4. Running Frontend
+### 3. Running Frontend
 
 ```
 # open your terminal
