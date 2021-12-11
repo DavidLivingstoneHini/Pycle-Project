@@ -21,7 +21,7 @@ $ npm install
 $ npm start
 ```
 
-### 3. Running Frontend
+### 3. Running the Frontend
 
 ```
 # open your terminal
